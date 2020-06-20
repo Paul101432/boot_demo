@@ -1,7 +1,7 @@
 <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
-    <id>6.0-SNAPSHOT</id>
+    <id>1.0</id>
     <formats>
         <format>dir</format>
         <format>zip</format>
@@ -30,6 +30,7 @@
             <includes>
                 <include>*.sh</include>
                 <include>*.bat</include>
+                <include>Dockerfile</include>
             </includes>
         </fileSet>
     </fileSets>

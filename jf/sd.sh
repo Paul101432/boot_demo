@@ -1,5 +1,5 @@
 
-MAIN_CLASS=com.sd.ms.demo.DemoApp
+MAIN_CLASS=com.sdtech.demo.JFConfig
 LOG_PATH=demo.log
 
 if [[ "$MAIN_CLASS" == "com.yourpackage.YourMainClass" ]]; then
