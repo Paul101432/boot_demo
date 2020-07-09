@@ -4,6 +4,17 @@ jfinal/springboot 演示
 
 ## TODO 
 + 基于jboot/springcloud的微服务演示
++ 工作流演示
+    https://mvnrepository.com/search?q=snakerflow
+    https://github.com/snakerflow-starter/snakerflow-spring-boot-starter
+    工作流需求
+    + 支持多节点流程 至少1
+    + 节点操作:通过/驳回(带描述)/转发/前置后置/
+    + 支持会签
+    + 支持或签
+    + 支持接口触发节点操作
+    + 操作留痕
+    + 支持加签
 
 
 ## docker 
