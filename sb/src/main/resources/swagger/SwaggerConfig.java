@@ -1,17 +1,9 @@
-package com.sdtech.demo;
+package com.sdtech.demo.swagger;
 
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.Profile;
-import org.springframework.core.env.Environment;
-import org.springframework.web.bind.annotation.RequestMethod;
 import springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;

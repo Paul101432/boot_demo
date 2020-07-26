@@ -1,4 +1,4 @@
-package com.sdtech.demo;
+package com.sdtech.demo.smart_doc;
 
 import lombok.Data;
 
@@ -15,15 +15,15 @@ public class QueryDto implements Serializable {
 
     private String name;
 
-    private String createTimeFrom;
-    private String createTimeTo;
+    private String createTimeFrom;// 创建开始时间
+    private String createTimeTo;// 创建结束时间
 
-    //类型
-    private Integer type;
-    //排序依据
-    private String sortField;
-    //排序方式（递增/递减）
-    private String sortOrder;
+
+    private Integer type;//类型
+
+    private String sortField;//排序依据
+
+    private String sortOrder;  //排序方式（递增/递减）
 
     public String getCreateTimeTo() {
         return createTimeTo+" 23:59:59";
