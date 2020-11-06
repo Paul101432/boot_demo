@@ -1,6 +1,7 @@
 package com.sdtech.demo;
 
 import com.jfinal.config.*;
+import com.jfinal.kit.LogKit;
 import com.jfinal.server.undertow.UndertowConfig;
 import com.jfinal.server.undertow.UndertowServer;
 import com.jfinal.template.Engine;
@@ -14,6 +15,7 @@ public class JFConfig extends JFinalConfig {
     public static void main(String[] args) {
         UndertowConfig thatConfig = new UndertowConfig(JFConfig.class);
         UndertowServer.create(thatConfig).start();
+        LogKit.error(" demo  ");
     }
 
 
