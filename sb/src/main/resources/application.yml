@@ -1,7 +1,0 @@
-server:
-  port: 8888
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver    # com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/ms?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=false
-    username: root
-    password: root

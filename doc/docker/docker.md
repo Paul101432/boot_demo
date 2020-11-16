@@ -4,15 +4,8 @@
 + 链接
 http://www.jfinal.com/share/1754
 https://gitee.com/superbigfu/jfinal_docker_test?_from=gitee_search
-+ 
-+ linux 修改格式 
-    + vi 文件名 
-    + 命令行模式输入 :set fileformat=unix
-    + w
-    + wq!
-
     
-## 简单web容器化
+## 基础配置
 
 ```
 # 解压服务包

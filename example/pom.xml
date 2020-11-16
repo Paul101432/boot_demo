@@ -8,13 +8,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>jc</artifactId>
+    <artifactId>example</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>jc-gateway</module>
-        <module>jc-sa</module>
-        <module>jc-se</module>
+        <module>shardingsphere</module>
+        <module>jpa</module>
     </modules>
 
 
