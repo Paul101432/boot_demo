@@ -9,10 +9,10 @@ LABEL maintainer="herongzhen@gzsdkj.com"
 ENV TZ=Asia/Shanghai
 
 # 指定工作目录,不存在就生成
-WORKDIR /sdc
+WORKDIR /sdc/ca
 
 # 复制本地主机的 <src>（为 Dockerfile 所在目录的相对路径）到容器中的 <dest>
-COPY ./jf /sdc
+COPY ./jf /sdc/ca
 
 # 在当前镜像基础上执行指定命令
 ## 软连接服务器时间配置环境变量
@@ -21,8 +21,8 @@ COPY ./jf /sdc
 ## 软连接到 sd_ca_logs
 RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && \
     echo ${TZ} > /etc/timezone && \
-    mkdir -p /sdc/log && \
-    ln -s /sdc/log /sd_ca_logs
+    mkdir -p /sdc/ca/log && \
+    ln -s /sdc/ca/log /sd_ca_logs
 
 # 该容器暴露的端口号
 EXPOSE 11000

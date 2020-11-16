@@ -1,0 +1,40 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: sc-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      routes:
+        - id : sc-sf
+          uri: lb://sc-sf
+          predicates:
+            - Path=/sf/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+        - id : sc-sg
+          uri: lb://sc-sg
+          predicates:
+            - Path=/sg/**
+          filters:
+            - SwaggerHeaderFilter
+            - StripPrefix=1
+    loadbalancer:
+      retry:
+        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+
